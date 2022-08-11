@@ -1,0 +1,270 @@
+* {
+    margin: 0 0;
+    padding: 0 0;
+}
+
+body {
+    background-color: rgb(240, 231, 219);
+    padding-bottom: 40px;
+}
+
+a {
+    color: inherit;
+    height: inherit;
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+}
+
+.italic {
+    font-style: italic;
+}
+
+/* Content */
+.content {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    font: 1em Arial, '黑体';
+    justify-content: center;
+    min-width: 450px;
+}
+
+/* Navbar */
+#navbar {
+    background-color: inherit;
+    border-bottom: solid rgb(210, 210, 210) 1px;
+    height: 50px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.navbar-tab {
+    align-items: center;
+    border-bottom: solid rgba(0, 0, 0, 0) 3px;
+    box-sizing: border-box;
+    display: flex;
+    font-weight: bold;
+    height: 100%;
+    justify-content: center;
+    padding: 0 20px;
+    transition: border-bottom 0.2s ease-in;
+}
+
+.navbar-tab:hover {
+    border-color: gray;
+}
+
+/* About me */
+#about {
+    flex-direction: column;
+    padding: 40px 20px 10px 20px;
+    position: relative;
+    /* top: 50px; */
+}
+
+#about div {
+    max-width: 450px;
+}
+
+#welcome {
+    align-items: center;
+    background-color: rgb(245 ,240, 232);
+    border-radius: 10px;
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    width: 100%;
+}
+
+#info {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    width: 100%;
+}
+
+#info h2 {
+    line-height: 50px;
+}
+
+#info p {
+    color: rgb(120, 120, 120);
+    font-size: 0.9em;
+    line-height: 20px;
+}
+
+#info img {
+    border-radius: 50%;
+    display: block;
+    width: 120px;
+}
+
+#introduction p {
+    font-family: Calibri;
+    line-height: 1.2;
+    margin: 16px 0;
+    text-align: justify;
+}
+
+#introduction .fa img {
+    border-radius: 50%;
+    display: block;
+    filter: grayscale(100%);
+    height: 13.72px;
+    position: relative;
+    top: 1.14px;
+    width: 13.72px;
+}
+
+/* Education */
+#education {
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+#education div, h2 {
+    max-width: 450px;
+}
+
+#educationTitle {
+    width: 100%;
+}
+
+.education-card {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: solid darkgray 1px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: rgb(120, 120, 120);
+    margin: 20px 0;
+    padding: 10px 16px;
+    width: 100%;
+}
+
+.card-header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.card-header h3 {
+    color: black;
+}
+
+.card-time {
+    font-size: 0.9em;
+}
+
+.education-card ul {
+    padding-left: 15px;
+}
+
+.card-line {
+    line-height: 24px;
+}
+
+/* Projects */
+#projects {
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+#projects div, h2 {
+    max-width: 450px;
+}
+
+#projectsTitle {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.project-card {
+    align-items: center;
+    background-color: rgba(255, 255, 255, 1);
+    border: solid darkgray 1px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex;
+    height: 120px;
+    justify-content: space-between;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.project-card-preview {
+    align-items: center;
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    width: 80px;
+}
+
+.project-card-info {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    padding: 10px;
+    width: calc(100% - 80px);
+}
+
+#projects a {
+    max-width: 450px;
+    width: 100%;
+}
+
+.project-card p {
+    line-height: 24px;
+}
+
+.project-card .card-header h3 {
+    font-size: 1em;
+    flex-basis: 80%;
+}
+
+.project-info {
+    color: rgb(120, 120, 120);
+}
+
+/* Skills */
+#skills {
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+#skills div, h2 {
+    max-width: 450px;
+}
+
+#skillsTitle {
+    margin: 10px 0;
+    width: 100%;
+}
+
+#skillWrapper {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.skill {
+    align-items: center;
+    background-color: lightgray;
+    border-radius: 6px;
+    box-sizing: border-box;
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    margin: 0 10px 10px 0;
+    padding: 5px 10px;
+}
